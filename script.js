@@ -56,6 +56,10 @@ let penColor = "#202020";
 
 sizeInput.addEventListener("input", createGrid);
 colorInput.addEventListener("input", setPenColor);
+colorInput.addEventListener("click", () => {
+  rainbowButton.classList.remove("active")
+  darkenButton.classList.remove("active");
+});
 rainbowButton.addEventListener("click", (e) => {
   e.target.classList.toggle("active");
   darkenButton.classList.remove("active");
