@@ -11,8 +11,12 @@
   <div id="container"></div>
   <div id="controls">
     <div id="size">
-      <input type="range" value="16" min="5" max="64">
-      <p id="input-label">Grid size: 16 x 16</p>
+      <input type="range" id="grid-size" value="16" min="5" max="64">
+      <label for="grid-size" id="size-label">Grid size: 16 x 16</label>
+    </div>
+    <div id="color">
+      <input type="color" id="pen-color" value="#202020">
+      <label for="pen-color" id="color-label">Pen Color</label>
     </div>
   </div>
 </body>
